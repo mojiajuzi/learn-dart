@@ -1,3 +1,2 @@
-# My Awesome Book
+![dart logo](/assets/0ffd8e5d2eee203272a582c8a9edb5922a07497d.png)
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
