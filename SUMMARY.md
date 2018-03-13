@@ -5,4 +5,5 @@
 * [变量](bian-liang.md)
 * [内置数据类型](nei-zhi-shu-ju-lei-xing.md)
 * [函数](han-shu.md)
+* [控制语句](kong-zhi-yu-ju.md)
 
