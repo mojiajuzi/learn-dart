@@ -47,18 +47,57 @@ Animal dog = new Dog();
 
 1. 首先定义一个`Person`类，该类包含一个私有属性`_name`，一个与类名同名的构造方法，以及一个`greet`方法
     ```dart
-        class Person {
+    class Person {
         final _name;
         Person(this._name);
         String greet(String who) => 'Hello, $who, i am $_name';
-        }
+    }
     ```
 
 1. 然后再定义另外一个类来实现
     ```Dart
-        class Impostor implements Person {
-        get _name => '';
+    class Impostor implements Person {
 
         String greet(String who) => 'Hi $who, Do you know who i am?';
-        }
+    }
     ```
+
+1. 接着调用一下`Impostor`
+
+    ```dart
+    main(List<String> args) {
+        print(greetBob(new Person('Kathy')));
+        print(greetBob(new Impostor()));
+    }
+    String greetBob(Person person) => person.greet('Bob');
+    ```
+
+Note:
+在Person中，由于`Person()`是构造方法，`_name`是私有方法，所以`Person`类只有`greet`一个接口是公开的
+
+因此`Impostor`类，只需要实现其`greet`方法即可,如果这个时候通过其实例对象调用其不存在的属性`_name`时
+
+```dart
+  Person imp = new Impostor();
+  print(imp._name);
+```
+这个时候会提示，`_name`不是`Impostor`的接口,在这种情况下，我们可以使用`getters`的方式，返回一个结果
+
+```dart
+  get _name => '';
+```
+
+到这里，我们基本可以看到,`extends`和`implements`的一些差别:
+
+1. 一个类的接口分为两类，公开接口和私有接口
+
+1. 通过`implements`的方式，只能拥有公开接口，而不能获取私有接口
+
+1. 如果是类含有参数的构造方法，那么继承将会需要实现该构造方法
+
+对于一个类来说，可以同时实现多个类的接口，只需要像如下调用即可：
+```dart
+class A implements B, C {
+  //todo
+}
+```
