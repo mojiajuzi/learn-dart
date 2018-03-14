@@ -8,4 +8,5 @@
 * [控制语句](kong-zhi-yu-ju.md)
 * [异常](yi-chang.md)
 * [类](lei.md)
+* [抽象类](chou-xiang-lei.md)
 
