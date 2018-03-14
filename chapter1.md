@@ -1,3 +1,3 @@
-# First Chapter
+# 第一章
 
-GitBook allows you to organize your book into chapters, each chapter is stored in a separate file like this one.
+这一章节将会介绍Dart的一些基本语法，不会太深入，也会忽略掉一些细节
