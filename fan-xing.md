@@ -14,16 +14,15 @@
   names.add(24);
 ```
 
-另外使用泛型能够减少代码数量，尤其是在可以使用接口，继承等特性的时候，比如一下一个例子：
+另外使用泛型能够减少代码数量，尤其是在可以使用接口，继承等特性的时候，比如一下一个例子
 
 1. 假设你需要创建一个对象缓存的类
     
-    ```dart
+    dart
     abstract class ObjectCache {
         Object getByKey(String key);
         void setByKey(String key, Object value);
     }
-    ```
     
     在这个类中包含两个方法，一个是通过一个string类型的参数，获取存储的对象，另外一个是通过string类型的参数和作为值的`Object`对象
 
