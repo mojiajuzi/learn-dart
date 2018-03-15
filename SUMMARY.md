@@ -11,4 +11,5 @@
 * [抽象类](chou-xiang-lei.md)
 * [类混合](hun-he.md)
 * [枚举](mei-ju.md)
+* [静态属性和方法](jing-tai-shu-xing-he-fang-fa.md)
 
