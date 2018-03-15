@@ -1,6 +1,6 @@
 ### Generics(泛型)
 
-如果你去查看基础的数组类型`List`的API文档的时候，你可以看到它实际的类型为`List<E>`，　其中`<...>｀标识一个泛型
+如果你去查看基础的数组类型`List`的API文档的时候，你可以看到它实际的类型为`List<E>`，　其中`<...>`标识一个泛型
 为了表达方便，通常泛型的具体类型使用单个字母标识，比如:`E,T,S,K,V`等
 
 由于在Dart1.x版本中，类型声明是可选的，所以你可以使用也可以不使用，为了使代码更加清晰，准确，这里强烈建议添加类型声明
@@ -18,11 +18,12 @@
 
 1. 假设你需要创建一个对象缓存的类
     
-    dart
+    ```dart
     abstract class ObjectCache {
         Object getByKey(String key);
         void setByKey(String key, Object value);
     }
+    ```
     
     在这个类中包含两个方法，一个是通过一个string类型的参数，获取存储的对象，另外一个是通过string类型的参数和作为值的`Object`对象
 
