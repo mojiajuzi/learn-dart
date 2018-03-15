@@ -10,4 +10,5 @@
 * [类](lei.md)
 * [抽象类](chou-xiang-lei.md)
 * [类混合](hun-he.md)
+* [枚举](mei-ju.md)
 
